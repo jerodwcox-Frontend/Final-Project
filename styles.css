@@ -78,13 +78,13 @@ nav {
 
 .nav__logo {
     display: flex;
-    justify-content: flex-end;
     align-items: center;
     margin: 8px 0;
     padding-bottom: 4px;
 }
 
 .nav__logo--img {
+    display: flex;
     width: 80px;
 }
 
