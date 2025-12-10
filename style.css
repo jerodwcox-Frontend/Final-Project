@@ -10,20 +10,36 @@
 
 body {
     max-width: 100vw;
-    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    width: 100%;
 }
 
 .row {
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
-    
+}
+
+.nav__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .row__narrow {
     width: 100%;
     max-width: 1024px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .container {
@@ -42,23 +58,18 @@ main {
     margin-bottom: 96px;
 }
 
-
-/* 
-
-NAVBAR ↓
-
-*/
-
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
+.nav__link--primary {
+    padding: 16px 32px;
+    background: #6415ff;
+    color: #f7fafc;
+    border-radius: 500px;
+    font-weight: 600;
 }
 
-.nav__row {
+/* NAVBAR ↓ */
+nav {
     display: flex;
-    justify-content: space-between;
+    padding-top: 32px;
 }
 
 .nav__logo {
@@ -68,12 +79,44 @@ nav {
     padding-bottom: 4px;
 }
 
+.nav__logo--img {
+    display: flex;
+    width: 80px;
+}
+
+.nav__logo--title {
+    display: flex;
+    padding-top: 4px;
+    font-size: 20px;
+    font-weight: 900;
+    margin-left: 12px;
+    letter-spacing: 0.6px;
+}   
+
+.nav__links {
+    padding-right: 20px;
+    margin: 20px 10px; /* Corrected margin */
+    display: flex;
+    list-style-type: none;
+}
+
+.nav__link {
+    padding: 8px 12px;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0 16px;
+    display: flex;
+}
 
 .btn__menu {
     display: none;
     background: transparent;
-    border: none;
+    border: 4px solid black;
     transition: all 300ms ease;
+}
+
+.button {
+    cursor: pointer;
 }
 
 .btn__menu--svg:hover {
@@ -96,6 +139,18 @@ nav {
     opacity: 0;
     transform: translateX(300%);
     transition: all 300ms ease;
+}
+
+button {
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: normal;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: center;
+    padding-inline: 6px;
+    padding-block: 1px;
 }
 
 .modal__links {
@@ -136,186 +191,51 @@ nav {
     right: 18px;
 }
 
+body {
+    font-family: Arial, sans-serif;
+}
 
-/* 
+.container {
+    display: flex; /* Use flexbox for layout */
+}
 
-HEADER / ABOUT US ↓
+.header__description{
+    width: 40%;
+    background-color: #d0d0d0;
+}
 
-*/
+.header__description--para{
+    font-size: 16px;
+    margin:32px 0;
+}
 
+p{
+    line-height: 1.5;
+}
 
-header .row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+*{
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "inter", sans-serif;
+    color: #243e63;
+}
+
+p{
+display: block;
+margin-block-start: 1em;
+margin-block-end: 1em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+unicode-bidi: isolate;
+}
+
+.column {
+    padding: 20px; 
+    box-sizing: border-box; 
 }
 
 
-/* 
-
-FEATURES ↓
-
-*/
-
-
-#features {
-    position: relative;
-}
-
-#features .row__narrow {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-/* 
-
-QUALITY WORK ↓
-
-*/
-
-
-#quality .row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-/* 
-
-STEPS ↓
-
-*/
-
-
-#steps .row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-/* 
-
-VALUES ↓
-
-*/
-
-#values .row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-/*
-
-PRICING ↓
-
-*/
-
-
-#pricing .row {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* 
-
-TESTIMONIALS ↓
-
-*/
-
-
-#testimonials .row {
-    display: flex;
-}
-
-
-/* 
-
-START / CALL TO ACTION ↓
-
-*/
-
-
-
-#start .row {
-    position: relative;
-    overflow: hidden;
-}
-
-
-/* 
-
-FOOTER ↓
-
-*/
-
-
-footer {
-    padding: 96px 32px;
-    background-color: rgb(100, 21, 255);
-    margin-bottom: -32px;
-    position: relative;
-    overflow: hidden;
-}
-
-
-/* 
-
-MOBILE RESPONSIVENESS ↓
-
-*/
-
-
-@media(max-width: 1280px) {
-    header .row {
-        align-items: flex-end;
-    }
-}
-
-@media (max-width: 1024px) {
-
-    .btn__menu {
-        display: block;
-    }
-    header .row {
-        flex-direction: column;
-        align-items: center;
-    }
-    footer {
-        padding: 80px 32px;
-    }
-}
-
-@media(max-width: 768px) {
-    #quality .row,
-    #values .row {
-        flex-direction: column-reverse;
-    }
-    #steps .row,
-    #testimonials .row {
-        flex-direction: column;
-        align-items: center;
-    }
-    #pricing .row {
-        margin-top: 40px;
-    }
-}
-
-@media(max-width: 640px) {
-    .container {
-        padding: 80px 0;
-    }
-    .nav__logo {
-        margin: 8px 0;
-        padding-bottom: 4px;
-    }
-    main {
-        margin-bottom: 80px;
-    }
+.column-60 {
+    width: 60%; /* Set width to 60% */
+    b /* Darker gray background for visibility */
 }
