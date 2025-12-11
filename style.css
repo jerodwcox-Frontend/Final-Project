@@ -95,9 +95,13 @@ main {
 }
 
 .header__email--input{
-border-radius: 32px
-padding: 20px;
-width: 70%}
+border-radius: 32px;
+padding: 32px;
+width: 100%}
+
+.header__customers--title{
+    margin-top: 10px;
+}
 
 .header__email--btn{
     
@@ -105,7 +109,7 @@ width: 70%}
 .nav__link--primary {
     position: relative;
     right: 5px;
-    padding: 16px 38px;
+    padding: 24px 32px;
     background: #6415ff;
     color: #f7fafc;
     border: 28px;
