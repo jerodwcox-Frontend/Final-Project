@@ -94,10 +94,12 @@ main {
     align-items: center;
 }
 
-.header__email--input
+.header__email--input{
 border-radius: 32 px
 padding: 20px;
-width: 200%
+width: 200%}
+
+
 
 .header__email--btn{
     
@@ -108,11 +110,21 @@ width: 200%
     padding: 16px 24px;
     background: #6415ff;
     color: #f7fafc;
-    border: none;
-    border-radius: 100px;
-    top: 5px;
+    border: 2px;
+    border-radius: 500px;
     font-weight: 600;
 }
+
+.nav__link--primary2{
+    position: absolute;
+    right: 5px;
+    padding: 16px 24px; 
+    background-color: #6415FF; 
+    color: white; 
+    border: none; 
+    border-radius: 100px;
+    top: 5px
+} 
 
 nav {
     display: flex;
