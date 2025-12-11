@@ -90,30 +90,29 @@ main {
 .header__email{
     width: 100%;
     max-width: 448px;
-    height: 680px;
     position: relative;
-    display: flex;
-    justify-content: flex-end;
     align-items: center;
 }
+
+.header__email--input
+border-radius: 32 px
+padding: 20px;
+width: 200%
 
 .header__email--btn{
     
 }
 .nav__link--primary {
-    padding: 16px 32px;
+    position: absolute;
+    right: 5px;
+    padding: 16px 24px;
     background: #6415ff;
     color: #f7fafc;
-    border-radius: 500px;
+    border: none;
+    border-radius: 100px;
+    top: 5px;
     font-weight: 600;
 }
-
-/* 
-
-NAVBAR ↓
-
-*/
-
 
 nav {
     display: flex;
