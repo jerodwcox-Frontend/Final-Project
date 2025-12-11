@@ -95,30 +95,29 @@ main {
 }
 
 .header__email--input{
-border-radius: 32 px
+border-radius: 32px
 padding: 20px;
-width: 200%}
-
-
+width: 70%}
 
 .header__email--btn{
     
 }
 .nav__link--primary {
-    position: absolute;
+    position: relative;
     right: 5px;
-    padding: 16px 24px;
+    padding: 16px 38px;
     background: #6415ff;
     color: #f7fafc;
-    border: 2px;
-    border-radius: 500px;
+    border: 28px;
+    border-radius: 100px;
     font-weight: 600;
 }
 
 .nav__link--primary2{
-    position: absolute;
+    position: relative;
     right: 5px;
-    padding: 16px 24px; 
+    font-size: medium;
+    padding: 8px 16px; 
     background-color: #6415FF; 
     color: white; 
     border: none; 
