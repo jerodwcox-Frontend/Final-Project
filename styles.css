@@ -1,8 +1,25 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__text,
+.header__image {
+  display: flex-shrink1;
+  padding: 10px;
+}
+
+.header__img {
+  max-width: 100%;
+  height: auto;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
     margin: 0;
-    padding: 0;
+    padding: 10;
     box-sizing: border-box;
     font-family: 'Inter', system-ui;
     color: #243e63;
@@ -18,6 +35,7 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
 img {
     width: 100%;
 }
@@ -222,17 +240,16 @@ HEADER / ABOUT US ↓
 
 */
 
-.column-60
-header .row {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+container {
+  display: flex;
+}
+.column-40 {
+  width: 40%;
+}
+.column-60 {
+  width: 60%;
 }
 
-.header__image--wrapper{
-    position: flex;
-}
 /* 
 
 FEATURES ↓
