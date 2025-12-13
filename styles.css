@@ -1,20 +1,3 @@
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.header__text,
-.header__image {
-  display: flex-shrink1;
-  padding: 10px;
-}
-
-.header__img {
-  max-width: 100%;
-  height: auto;
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
@@ -28,7 +11,6 @@
 body {
     max-width: 100vw;
     min-height: 100vh;
-
 }
 
 a {
@@ -82,20 +64,81 @@ main {
     margin-bottom: 96px;
 }
 
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__text,
+.header__image {
+  display: flex-shrink1;
+  padding: 50px;
+}
+
+.header__img {
+  max-width: 100%;
+  height: auto;
+}
+
+.header__img--wrapper{
+    display: flex;
+    justify-content: flex-end;
+    width: calc(100% - 40%);
+}
+
+.header__email{
+    width: 100%;
+    max-width: 448px;
+    position: relative;
+    align-items: center;
+}
+
+.header__email--input{
+border-radius: 32px;
+padding: 16px;
+width: 100%}
+
+.header__customers--title{
+    margin-top: 10px;
+}
+
+.header__email--btn{
+    z-index: 2;
+    margin: 8px;
+    height: calc(100%-16px);
+    border-radius: 500px;
+    width: 160px;
+    border: none;
+    background-color: #6415FF;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    transition: all 300ms ease;    
+}
+
 .nav__link--primary {
-    padding: 16px 32px;
+    position: relative;
+    right: 5px;
+    padding: 16px 27px;
     background: #6415ff;
     color: #f7fafc;
-    border-radius: 500px;
+    border: 28px;
+    border-radius: 100px;
     font-weight: 600;
 }
 
-/* 
-
-NAVBAR ↓
-
-*/
-
+.nav__link--primary2{
+    position: relative;
+    right: 5px;
+    font-size: medium;
+    padding: 8px 16px; 
+    background-color: #6415FF; 
+    color: white; 
+    border: none; 
+    border-radius: 100px;
+    top: 5px
+} 
 
 nav {
     display: flex;
